@@ -1,1 +1,37 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="clans.css" />
+	</head>
+	<body onload="zoom()">
+		<script src="clans.js"> </script>
+		<Title> Clans </Title>
+		<h1> Clans </h1>
+		<h3> Choose your army </h3>
+		<form class="poop"> 
+			Army camp space: <input class="input2" id="Camp" type="text" value=200><br>
+		</form>
+		<form class="form" id="form">
+			Barbarians: <input id="Barbarian" type="text" name="barbs" value="rest"><br>
+			Archers: <input id="Archer" type="text" name="archers" value="rest"><br>
+			Giants: <input id="Giant" type="text" name="giants" value=4><br>
+			Goblins: <input id="Goblin" type="text" name="goblins" value=0><br>
+			Wall Breakers: <input id="Wall Breaker" type="text" name="wall breakers" value=6><br>
+			Balloons: <input id="Balloon" type="text" name="balloons" value=0><br>
+			Wizards: <input id="Wizard" type="text" name="wizards" value=0><br>
+			Healers: <input id="Healer" type="text" name="healers" value=0><br>
+			Dragons: <input id="Dragon" type="text" name="dragons" value=0><br>
+			Pekkas: <input id="Pekka" type="text" name="pekkas" value=0><br>
+		</form>
+		<div class="button big-btn" onclick="clearBox('targetLocation'); klaus();">Click</div> 
+		<div class="border"><div>
+		<div class="target" id="targetLocation"></div>
+		<div class="target" id="targetLocation1"></div>
+		<div class="target" id="targetLocation2"></div>
+		<div class="target" id="targetLocation3"></div>
+	<body/>
+</html>
+
+
+<!-- Do Codecademy's on HTML, CSS, then learn javascript -->
