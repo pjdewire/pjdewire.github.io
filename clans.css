@@ -1,0 +1,82 @@
+.button {
+	color: #ffffff;
+	/* float: right; */
+	padding: 10px;
+	border: 1px solid #cccccc;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.big-btn {
+	width: 90px;
+	height: 30px;
+}
+
+
+h1 {
+	text-align: center;
+	color: #cccccc;
+}
+
+h3 {
+	text-align: center;
+	color: #cccccc;
+}
+
+form {
+	margin-top: 1em;
+	color: #cccccc;
+	text-align: center;
+}
+
+body {
+	background-color: #123456;
+	color: #cccccc;
+}
+
+input {
+	background-color: #123456;
+	color: #cccccc;
+}
+
+.input2 {
+	margin-bottom: 1.5em;
+	/* border-bottom: 1px white; */
+	background-color: #123456;
+}
+
+.poop {
+	/* border-bottom-style: solid;
+	border-bottom-width: 1px;
+	*/
+	position: relative
+}
+
+.poop:after {
+	content : "";
+	position: absolute;
+	left    : 25%;
+	bottom  : 0;
+	height  : 1px;
+	width   : 50%;
+	border-bottom: 1px solid #cccccc;
+}
+
+
+.target {
+	float: left;
+	margin-left: 1.5em;
+	margin-top: 1em;
+}
+
+.form {
+}
+
+.border {
+	border-bottom: 1px solid #cccccc;
+}
