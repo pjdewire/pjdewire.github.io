@@ -68,12 +68,12 @@ var klaus = function() {    // collect values from form and write them
 	for (i = 0; i < troops.length; i++) {
 		if (troops[i].count != 0) {
 			totalTime += (troops[i].count * troops[i].time);
-			target[0].appendChild(document.createTextNode(troops[i].name + " -- " + troops[i].count));
-			target[0].appendChild(document.createElement("br"));
+			// target[0].appendChild(document.createTextNode(troops[i].name + " -- " + troops[i].count));
+			// target[0].appendChild(document.createElement("br"));
 		}
 	}   
 
-	target[0].appendChild(document.createTextNode("Total time -- " + (totalTime / 240) + " mins/barracks"));
+	// target[0].appendChild(document.createTextNode("Total time -- " + (totalTime / 240) + " mins/barracks"));
 
 	barracks[0] = new Barrack(0, 75, 0, 0);
 	barracks[1] = new Barrack(1, 75, 0, 0);
@@ -96,11 +96,14 @@ var klaus = function() {    // collect values from form and write them
 		}
 	}
 
+	/*
 	target[0].appendChild(document.createElement("br"));
 	target[0].appendChild(document.createTextNode("~~~~~~~~~~~~~~~~"));
 	target[0].appendChild(document.createElement("br"));
+	*/
+
 	for (i = 0; i < barracks.length; i++) {
-		target[i].appendChild(document.createTextNode("Barracks " + barracks[i].index + ": " + barracks[i].taken + " spaces taken"));
+		target[i].appendChild(document.createTextNode("Barracks " + (barracks[i].index + 1) + ": " + barracks[i].taken + " spaces taken"));
 		target[i].appendChild(document.createElement("br"));
 		for (j = 0; j < troops.length; j++) {
 			if (barracks[i].nTroop[j] > 0) {
